@@ -1,0 +1,6 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Mon May 12 12:54:19 PDT 2014
+maven-jar-plugin-2.4.pom.repositoryUri=https\://nexus.soma.salesforce.com/nexus/content/groups/public
+maven-jar-plugin-2.4.jar.repositoryUri=https\://nexus.soma.salesforce.com/nexus/content/groups/public
+maven-jar-plugin-2.4.pom>nexus=
+maven-jar-plugin-2.4.jar>nexus=

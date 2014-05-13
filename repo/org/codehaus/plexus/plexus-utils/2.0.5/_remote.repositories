@@ -1,0 +1,6 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Mon May 12 12:54:25 PDT 2014
+plexus-utils-2.0.5.jar>nexus=
+plexus-utils-2.0.5.pom>nexus=
+plexus-utils-2.0.5.pom.repositoryUri=https\://nexus.soma.salesforce.com/nexus/content/groups/public
+plexus-utils-2.0.5.jar.repositoryUri=https\://nexus.soma.salesforce.com/nexus/content/groups/public

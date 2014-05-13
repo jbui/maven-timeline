@@ -1,0 +1,6 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Mon May 12 13:39:07 PDT 2014
+json-20140107.pom.repositoryUri=https\://nexus.soma.salesforce.com/nexus/content/groups/public
+json-20140107.pom>nexus=
+json-20140107.jar.repositoryUri=https\://nexus.soma.salesforce.com/nexus/content/groups/public
+json-20140107.jar>nexus=

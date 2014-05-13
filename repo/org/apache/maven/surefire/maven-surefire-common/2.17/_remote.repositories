@@ -1,0 +1,6 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Mon May 12 12:54:28 PDT 2014
+maven-surefire-common-2.17.pom.repositoryUri=https\://nexus.soma.salesforce.com/nexus/content/groups/public
+maven-surefire-common-2.17.jar.repositoryUri=https\://nexus.soma.salesforce.com/nexus/content/groups/public
+maven-surefire-common-2.17.jar>nexus=
+maven-surefire-common-2.17.pom>nexus=

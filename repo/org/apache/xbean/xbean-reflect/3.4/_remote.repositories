@@ -1,0 +1,6 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Mon May 12 12:54:27 PDT 2014
+xbean-reflect-3.4.pom>nexus=
+xbean-reflect-3.4.jar>nexus=
+xbean-reflect-3.4.pom.repositoryUri=https\://nexus.soma.salesforce.com/nexus/content/groups/public
+xbean-reflect-3.4.jar.repositoryUri=https\://nexus.soma.salesforce.com/nexus/content/groups/public

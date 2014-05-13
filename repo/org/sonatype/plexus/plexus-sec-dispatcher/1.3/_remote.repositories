@@ -1,0 +1,6 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Mon May 12 12:54:21 PDT 2014
+plexus-sec-dispatcher-1.3.jar>nexus=
+plexus-sec-dispatcher-1.3.pom.repositoryUri=https\://nexus.soma.salesforce.com/nexus/content/groups/public
+plexus-sec-dispatcher-1.3.jar.repositoryUri=https\://nexus.soma.salesforce.com/nexus/content/groups/public
+plexus-sec-dispatcher-1.3.pom>nexus=

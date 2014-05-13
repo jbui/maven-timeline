@@ -1,0 +1,6 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Mon May 12 12:54:21 PDT 2014
+aether-api-1.11.jar.repositoryUri=https\://nexus.soma.salesforce.com/nexus/content/groups/public
+aether-api-1.11.pom>nexus=
+aether-api-1.11.jar>nexus=
+aether-api-1.11.pom.repositoryUri=https\://nexus.soma.salesforce.com/nexus/content/groups/public

@@ -21,9 +21,8 @@ import java.util.concurrent.*;
 
 import org.apache.maven.execution.*;
 import org.apache.maven.plugin.*;
-
-import com.github.jknack.handlebars.*;
-import com.github.jknack.handlebars.context.*;
+import org.json.JSONArray;
+import org.json.JSONObject;
 
 public class BuildEventListener extends AbstractExecutionListener {
   private final File output;
@@ -87,35 +86,30 @@ public class BuildEventListener extends AbstractExecutionListener {
       buildEndTime = Math.max(buildEndTime, end);
     }
 
-    List<Measure> measures = new ArrayList<Measure>();
+    List<HashMap<String, Object>> measureList = new ArrayList<HashMap<String, Object>>();
     for (String key : startTimes.keySet()) {
       String[] keyParts = key.split("/");
-
-      Measure measure = new Measure();
-      measure.group = keyParts[0];
-      measure.project = keyParts[1];
-      measure.phase = keyParts[2];
-      measure.goal = keyParts[3];
-      measure.id = keyParts[4];
-      measure.start = startTimes.get(key) - buildStartTime;
-      measure.end = endTimes.get(key) - buildStartTime;
-      measure.left = (measure.start * 10000L) / (buildEndTime - buildStartTime);
-      measure.width = ((measure.end * 10000L) / (buildEndTime - buildStartTime)) - measure.left;
-      measure.elapsed = measure.end - measure.start;
-      measure.thread = threads.get(key);
-      measures.add(measure);
+      HashMap<String, Object> measure = new HashMap<String, Object>();
+      
+      measure.put("group", keyParts[0]);
+      measure.put("project", keyParts[1]);
+      measure.put("phase", keyParts[2]);
+      measure.put("goal", keyParts[3]);
+      measure.put("id", keyParts[4]);
+      measure.put("thread", threads.get(key));
+      measure.put("start", startTimes.get(key) - buildStartTime);
+      measure.put("end", endTimes.get(key) - buildStartTime);
+      measure.put("elapsed", (endTimes.get(key) - buildStartTime) - startTimes.get(key) - buildStartTime);
+      measureList.add(measure);
     }
 
-    Collections.sort(measures);
-
     try {
-      String html = new Handlebars().compile("template").apply(Context.newBuilder(measures).resolver(FieldValueResolver.INSTANCE).build());
-      write(html);
+      write((new JSONArray(measureList)).toString());
     } catch (IOException e) {
       throw new RuntimeException(e);
     }
   }
-
+  
   private void write(String message) throws IOException {
     File path = output.getParentFile();
     if (!path.exists()) {
@@ -127,24 +121,5 @@ public class BuildEventListener extends AbstractExecutionListener {
     FileWriter writer = new FileWriter(output);
     writer.write(message);
     writer.close();
-  }
-
-  public static class Measure implements Comparable<Measure> {
-    String group;
-    String project;
-    String phase;
-    String goal;
-    String id;
-    Long start;
-    Long end;
-    Long elapsed;
-    Long left;
-    Long width;
-    Long thread;
-
-    @Override
-    public int compareTo(Measure other) {
-      return left.compareTo(other.left);
-    }
-  }
+  }  
 }

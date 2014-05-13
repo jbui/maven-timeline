@@ -1,0 +1,6 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Mon May 12 12:54:25 PDT 2014
+plexus-interpolation-1.13.pom>nexus=
+plexus-interpolation-1.13.pom.repositoryUri=https\://nexus.soma.salesforce.com/nexus/content/groups/public
+plexus-interpolation-1.13.jar>nexus=
+plexus-interpolation-1.13.jar.repositoryUri=https\://nexus.soma.salesforce.com/nexus/content/groups/public

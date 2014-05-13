@@ -1,0 +1,6 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Mon May 12 12:54:28 PDT 2014
+maven-plugin-annotations-3.2.jar>nexus=
+maven-plugin-annotations-3.2.pom>nexus=
+maven-plugin-annotations-3.2.pom.repositoryUri=https\://nexus.soma.salesforce.com/nexus/content/groups/public
+maven-plugin-annotations-3.2.jar.repositoryUri=https\://nexus.soma.salesforce.com/nexus/content/groups/public

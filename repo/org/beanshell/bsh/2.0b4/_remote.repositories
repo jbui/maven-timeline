@@ -1,0 +1,6 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Mon May 12 12:54:24 PDT 2014
+bsh-2.0b4.pom.repositoryUri=https\://nexus.soma.salesforce.com/nexus/content/groups/public
+bsh-2.0b4.jar.repositoryUri=https\://nexus.soma.salesforce.com/nexus/content/groups/public
+bsh-2.0b4.pom>nexus=
+bsh-2.0b4.jar>nexus=

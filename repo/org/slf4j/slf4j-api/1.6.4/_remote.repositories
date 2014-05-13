@@ -1,0 +1,6 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Mon May 12 12:54:21 PDT 2014
+slf4j-api-1.6.4.pom.repositoryUri=https\://nexus.soma.salesforce.com/nexus/content/groups/public
+slf4j-api-1.6.4.pom>nexus=
+slf4j-api-1.6.4.jar.repositoryUri=https\://nexus.soma.salesforce.com/nexus/content/groups/public
+slf4j-api-1.6.4.jar>nexus=

@@ -1,0 +1,6 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Mon May 12 12:54:29 PDT 2014
+maven-shared-utils-0.4.jar.repositoryUri=https\://nexus.soma.salesforce.com/nexus/content/groups/public
+maven-shared-utils-0.4.pom>nexus=
+maven-shared-utils-0.4.jar>nexus=
+maven-shared-utils-0.4.pom.repositoryUri=https\://nexus.soma.salesforce.com/nexus/content/groups/public
