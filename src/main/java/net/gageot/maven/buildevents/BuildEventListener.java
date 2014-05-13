@@ -99,7 +99,7 @@ public class BuildEventListener extends AbstractExecutionListener {
       measure.put("thread", threads.get(key));
       measure.put("start", startTimes.get(key) - buildStartTime);
       measure.put("end", endTimes.get(key) - buildStartTime);
-      measure.put("elapsed", (endTimes.get(key) - buildStartTime) - startTimes.get(key) - buildStartTime);
+      measure.put("elapsed", (endTimes.get(key) - buildStartTime) - (startTimes.get(key) - buildStartTime));
       measureList.add(measure);
     }
 
