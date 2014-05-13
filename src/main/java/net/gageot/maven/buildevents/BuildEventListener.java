@@ -81,11 +81,6 @@ public class BuildEventListener extends AbstractExecutionListener {
       buildStartTime = Math.min(buildStartTime, start);
     }
 
-    long buildEndTime = 0;
-    for (Long end : endTimes.values()) {
-      buildEndTime = Math.max(buildEndTime, end);
-    }
-
     List<HashMap<String, Object>> measureList = new ArrayList<HashMap<String, Object>>();
     for (String key : startTimes.keySet()) {
       String[] keyParts = key.split("/");
